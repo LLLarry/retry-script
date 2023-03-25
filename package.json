@@ -1,6 +1,6 @@
 {
   "name": "retry-script",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "重试script",
   "keywords": [
     "retry-script",
@@ -16,10 +16,10 @@
   },
   "author": "LLLarry",
   "license": "ISC",
-  "homepage": "http://121.5.230.70:8080/captcha-slider/",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LLLarry/captcha-slider"
+    "url": "https://github.com/LLLarry/retry-script"
   },
   "devDependencies": {
     "@babel/core": "^7.19.6",
