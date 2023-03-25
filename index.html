@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>retry-script</title>
+	<script type="text/javascript" src="./dist/retry-script.iife.js"></script>
+	<script type="text/javascript">
+		new RetryScript({
+			hosts: [
+			'http://local/1',
+			'http://local/2',
+			'http://local/3'
+		],
+			handler (config) {
+				console.log(config)
+				return config.join('http://www.he360.cn', config.source)
+			}
+		})
+	</script>
+	<script type="text/javascript" src="http://local/0/a.js"></script>
+
+</head>
+<body>
+	<div id="app">
+		
+	</div>
+</body>
+</html>
