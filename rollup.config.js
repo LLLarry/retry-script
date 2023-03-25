@@ -17,7 +17,7 @@ export default {
     //    // compact: true
     // },
     {
-      file: 'dist/retry-script.iife.js',
+      file: 'dist/retry-script.js',
       format: 'iife',
       name: 'RetryScript',
       // compact: true
@@ -26,7 +26,7 @@ export default {
   plugins: [
       resolve(),  // 这样 Rollup 能找到 `ms`
       commonjs(), // 这样 Rollup 能转换 `ms` 为一个ES模块
-      // terser(), // 生产环境下压缩代码
+      terser(), // 生产环境下压缩代码
       babel({babelHelpers: 'bundled'}),
   ]
 };
